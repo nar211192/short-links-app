@@ -6,6 +6,7 @@ const path = require('path')
 const PORT = config.get('port')
 
 app.use(express.json({extended: true}))
+console.log('here')
 
 app.use('/api/auth', require('./routes/auth.routes'))
 app.use('/api/link', require('./routes/link.routes'))
